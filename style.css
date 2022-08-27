@@ -1,0 +1,130 @@
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: large;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #c49300;*/
+  background-image: url("ustbgd4.jpg");
+}
+background-image {
+  opacity: 0.5;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+  padding: 1% 0;
+  font-size: 1rem;
+  font-weight: 1000;
+  font-family: "Darker Grotesque", sans-serif;
+  letter-spacing: 0.1rem;
+  background-color:#434141;
+}
+
+.navbar-brand {
+  font-size: 200%;
+}
+
+
+
+.navbar-nav li {
+  padding-right: 1rem;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #720d0d;
+}
+
+.navbar-logo {
+  width: 6%;
+  margin-left: 2%;
+}
+
+.pageNumber{
+	padding-bottom: 50px;
+}
+
+.pages{
+	color: #6B4F4F;
+	font-size: 25px;
+	vertical-align: middle;
+	letter-spacing: 25px;
+}
+
+.pages:hover{
+	color: #E19374;
+	text-decoration: none;
+}
+
+.curPage{
+	color: #E19374;
+	font-size: 35px;
+}
+
+/*-- Footer --*/
+footer {
+  width: 100%;
+  background-color:#720d0d;
+  font-family: "Darker Grotesque", sans-serif;
+  padding: 2%;
+  color: white;
+}
+
+.text{
+  display:block;
+  color: #ffd198;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 16px;
+}
+
+.text:hover{
+  color: #434141;
+}
+@media (max-width: 965px) {
+    .navbar {
+        font-size: 20px;
+    }
+    .logo_enable{
+        display: none;
+        visibility: hidden;
+    }
+    .iconify{
+      pointer-events: none;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

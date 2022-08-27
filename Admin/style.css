@@ -1,0 +1,129 @@
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: large;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e0e2e4;
+  padding-top: 56px;
+ 
+}
+
+.cicslogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #434141;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 56px;
+    position: sticky;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #880a0a;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /*-- Navigation Bar --*/
+.navbar {
+    padding: 1% 0;
+    font-size: 1rem;
+    font-weight: 1000;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 0.1rem;
+    background-color:#434141;
+    
+  }
+  
+  .navbar-brand {
+    font-size: 200%;
+  }
+  
+  
+  
+  .navbar-nav li {
+    padding-right: 1rem;
+    font-family: "Darker Grotesque", sans-serif;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-top: 0.8rem;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #720d0d;
+  }
+  
+  .navbar-logo {
+    width: 6%;
+    margin-left: 2%;
+  }
+
+  .sidebar {
+    height: 665px;
+    width: 160px;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color: #434141;
+    overflow-x: hidden;
+    position:absolute;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color:#ad1c1c;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

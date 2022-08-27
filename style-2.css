@@ -1,0 +1,46 @@
+/*--------------------- HOMEPAGE ---------------------*/
+
+
+ 
+  
+  /*--------------------- ABOUT ---------------------*/
+  .about-container {
+    margin: 10%;
+  }
+  .about-text {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Darker Grotesque", sans-serif;  }
+  
+  .about-details {
+    font-size: x-large;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /*--------------------- FAQ ---------------------*/
+  .faq-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: "Abril Fatface", cursive;
+  }
+  
+  .faq-details {
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Darker Grotesque", sans-serif;
+  }
+  
+  .faq-details .indent {
+    text-indent: 50px;
+  }
+  
+  .signup-text {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  
