@@ -104,7 +104,7 @@
         <p>Sample Text Sample Text Sample Text Sample Text Sample </p>
         <button type="button" class="btn btn-secondary"><b>View More</b></button>
       </div>
-    </div>
+    </div>//test
   </footer>
 
 
