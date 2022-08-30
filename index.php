@@ -35,6 +35,7 @@
     session_start();
     if (!isset($_SESSION['user_name'])) {
     ?>
+    //coomment
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand" href="index.php"></a>
