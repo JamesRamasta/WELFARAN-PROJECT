@@ -7,10 +7,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /*background-color: #c49300;*/
-  background-image: url("ustbgd4.jpg");
+  background-image: url("ustbgd2.jpg");
+  
 }
 background-image {
   opacity: 0.5;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 /*-- Navigation Bar --*/
@@ -20,14 +23,12 @@ background-image {
   font-weight: 1000;
   font-family: "Darker Grotesque", sans-serif;
   letter-spacing: 0.1rem;
-  background-color:#434141;
+  background-color: #434141;
 }
 
 .navbar-brand {
   font-size: 200%;
 }
-
-
 
 .navbar-nav li {
   padding-right: 1rem;
@@ -41,7 +42,7 @@ background-image {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #720d0d;
+  color: #990000;
 }
 
 .navbar-logo {
@@ -49,38 +50,39 @@ background-image {
   margin-left: 2%;
 }
 
-.pageNumber{
-	padding-bottom: 50px;
+.pageNumber {
+  padding-bottom: 50px;
 }
 
-.pages{
-	color: #6B4F4F;
-	font-size: 25px;
-	vertical-align: middle;
-	letter-spacing: 25px;
+.pages {
+  color: #6b4f4f;
+  font-size: 25px;
+  vertical-align: middle;
+  letter-spacing: 25px;
 }
 
-.pages:hover{
-	color: #E19374;
-	text-decoration: none;
+.pages:hover {
+  color: #e19374;
+  text-decoration: none;
 }
 
-.curPage{
-	color: #E19374;
-	font-size: 35px;
+.curPage {
+  color: #e19374;
+  font-size: 35px;
 }
 
 /*-- Footer --*/
 footer {
   width: 100%;
-  background-color:#720d0d;
+  background-color: #990000;
   font-family: "Darker Grotesque", sans-serif;
   padding: 2%;
   color: white;
+
 }
 
-.text{
-  display:block;
+.text {
+  display: block;
   color: #ffd198;
   width: 50%;
   margin: 0 auto;
@@ -88,20 +90,20 @@ footer {
   font-size: 16px;
 }
 
-.text:hover{
+.text:hover {
   color: #434141;
 }
 @media (max-width: 965px) {
-    .navbar {
-        font-size: 20px;
-    }
-    .logo_enable{
-        display: none;
-        visibility: hidden;
-    }
-    .iconify{
-      pointer-events: none;
-    }
+  .navbar {
+    font-size: 20px;
+  }
+  .logo_enable {
+    display: none;
+    visibility: hidden;
+  }
+  .iconify {
+    pointer-events: none;
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -112,7 +114,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 

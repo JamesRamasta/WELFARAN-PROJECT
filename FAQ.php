@@ -41,7 +41,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <a href="index.php"><img src="ustlogo.png" style="width:80px;height:75px;margin-left:20%;" class="logo_enable"></a>
-        <a href="index.php"><img src="cicslogo.png" style="width:80px;height:70px;margin-left:20%;" class="logo_enable"></a>
+        <a href="index.php"><img src="cicslogo.png" style="width:70px;height:60px;margin-left:20%;" class="logo_enable"></a>
 
         <div class="text" style="color:white; margin-right:15%; width:100%; line-height: 0.6;">
         <strong style="margin-left:10%; width:100%;">UST - College of Information and Computing Sciences</strong>
@@ -105,45 +105,46 @@
   }
   ?>
  
- <div class="container-fluid" id="containerhome" style="margin-top: 150px; color: white;">
-<h2>Frequently Asked Questions</h2>
+ <div class="container-fluid" id="containerhome" style=" width: 50%; margin-left: 20px; margin-top: 150px; color: white; background:rgba(128, 128, 128, 0.8); ">
+<h2 style=" padding-top: 20px;  padding-left: 10px; ">Frequently Asked Questions</h2>
 <br/>
 <div style = "line-height: 1; text-indent: 50px;">
   <p style = "text-indent: 50px; font-size:20px; font-weight:bold;">-What is...?</p>
-  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample TextSample Text</p>
+  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample </p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>  
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text</p>
 
   <p style = "text-indent: 50px; font-size:20px; font-weight:bold;">-What is...?</p>
-  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample TextSample Text</p>
+  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample </p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>  
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text</p>
 
   <p style = "text-indent: 50px; font-size:20px; font-weight:bold;">-What is...?</p>
-  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample TextSample Text</p>
+  <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text TextSample </p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>  
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample Text TextSample TextSample Text</p>
   <p style = "text-indent: 50px;">Sample Text Sample Text Sample TextTextSample TextSample Text</p>
+  <br/>
  </div>
  </div>
+ <br/>
 
 
 
-  <!-- Footer Bar -->
-  <footer class="container-fluid" id="socials_section" style="position: absolute;">
+    <!-- Footer Bar -->
+    <footer class="container-fluid" id="socials_section" style=" position: absolute;">
     <div class="row" >
       <div class="col-sm-4" style="line-height: 0.8;">
         <h3 style="font-family: Darker Grotesque, sans-serif;">Contacts:</h3>
         <p>Sample Text Sample Text Sample Text Sample Text Sample </p>
         <p>Sample Text Sample Text Sample Text Sample Text Sample Text</p>
         <p>Sample Text Sample Text Sample Text Sample Text Sample </p>
-        <button type="button" class="btn btn-secondary"><b>View More</b></button>
+        <button type="button" class="btn btn-secondary"><b><a href="contactus.php" style="color: white;">View More</a></b></button>
       </div>
-    </div>
+      <p style="padding-left:35%;">Photo: facebook/UST-College of Information and Computing Sciences</p>    </div>
   </footer>
-
 
   
 </body>
