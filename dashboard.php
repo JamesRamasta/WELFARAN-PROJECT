@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>UST-CICS SWDB RequestPage</title>
+  <title>UST-CICS SWDB Dashboard</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
@@ -112,7 +112,7 @@
 
   <br />
   <div class="containerhome" style="margin:auto;"></div>
-  <div class="container-fluid" id="containerhome" style=" width:55%; margin-top: 150px;  color: white;  background: rgba(128, 128, 128, 0.8);">
+  <div class="container-fluid" id="containerhome" style=" width:55%; margin-top: 150px; margin-left: 40px; color: white;  background: rgba(128, 128, 128, 0.8); float: left;">
     <h2 style="margin-top:10px;">CICS - Student Welfare and Development Board</h2>
     <br />
 
@@ -130,19 +130,21 @@
     </div>
   </div>
 
+  <div class="container" style="background: rgba(153, 0, 0, 0.8); height:300px; width:400px; text-align: center;  color:white; margin-right:5%; margin-top:10%;">
+    <h3 style="text-align:center; padding-top:20px;">Welcome! User</h3> <br />
+    <button type="button" class="btn btn-light" style="width: 90%;"><a href="request.php" style="color: black;">View Request</a></button> <br/> <br/>
+    <button type="button" class="btn btn-light" style="width: 90%;"><a href="changepassword.php" style="color: black;">Change Password</a></button> <br/> <br/>
+    <button type="button" class="btn btn-light" style="width: 30%; "><a href="index.php" style="color: black;">Logout</a></button>
+
+    
+  </div>
+  </div>
   <br />
+  <br />
+  <br />
+  <br />  <br />
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("password");
-      if (x.type === "password") {
-        x.type = "text";
-      } else {
-        x.type = "password";
-      }
-    }
-  </script>
-
+  
 
   <!-- Footer Bar -->
   <footer class="container-fluid" id="socials_section" style=" position: absolute;">

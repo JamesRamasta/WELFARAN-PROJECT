@@ -41,7 +41,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <a href="index.php"><img src="ustlogo.png" style="width:80px;height:75px;margin-left:20%;" class="logo_enable"></a>
-        <a href="index.php"><img src="cicslogo.png" style="width:80px;height:70px;margin-left:20%;" class="logo_enable"></a>
+        <a href="index.php"><img src="cicslogo.png" style="width:70px;height:60px;margin-left:20%;" class="logo_enable"></a>
 
         <div class="text" style="color:white; margin-right:15%; width:100%; line-height: 0.6;">
         <strong style="margin-left:10%; width:100%;">UST - College of Information and Computing Sciences</strong>
@@ -106,17 +106,19 @@
   }
   ?>
  
-<div class="container-fluid" style=" background-color: #720d0d; height:150px; width:100%; margin-top: 100px;" >
-<h3 style="padding-top: 40px; color: white;">About Us</h3>
-<hr style="color: white; width:40%; border-top: 2px solid white; float: left;">
+<div class="container-fluid" style=" background-color: #990000; height:100px; width:100%; margin-top: 100px;" >
+<h3 style="padding-top: 40px; color: white; line-height:10%; text-indent: 10px;">About Us</h3>
+<hr style="color: white;  width:40%; border-top: 2px solid white; float: left;">
 </div>
 
-<div class="container-fluid" style="height:auto; width:50%; background-color: white; margin-right: 50%;">
+
+
+<div class="container-fluid" style="height:auto; width:50%; background-color: white;  float:right;">
  <br/>
- <h2 >About UST-CICS SWDB</h2>
-<p>Sample Text Sample Text Sample Text Sample Text Sample </p>
-<p>Sample Text Sample Text Sample Text Sample Text Sample Text</p>
-<p>Sample Text Sample Text Sample Text Sample Text Sample </p>
+ <h2  style="text-indent: 30px;">About UST-CICS SWDB</h2>
+<p style="text-indent: 30px;">Sample Text Sample Text Sample Text Sample Text Sample </p>
+<p style="text-indent: 30px;"> Sample Text Sample Text Sample Text Sample Text Sample Text</p>
+<p style="text-indent: 30px;">Sample Text Sample Text Sample Text Sample Text Sample </p>
 <br/>
 <hr style=" border: none; border-top: 2px solid black">
 <br/>
@@ -139,23 +141,51 @@
   </div>
 </div>
 <br/>
+<br/>
+</div>
+
+<div class="container-fluid" style = "height:auto; width:50%; margin-right: 50%; text-align:center; background: rgba(128, 128, 128, 0.8); ">
+  <br/>
+  <h4 style="color:white;"><b>Mission</b></h4>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+
+  <h4 style="color:white;"><b>Vision</b></h4>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+
+  <h4 style="color:white;"><b>Motto</b></h4>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+
+  <h4 style="color:white;"><b>Thomasian Core Value</b></h4>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+
+  <h4 style="color:white;"><b>Student Handbook</b></h4>
+  <p style="color:white;">Sample Text Sample Text Sample Text</p>
+<br/>
+
 </div>
 
 
-
   <!-- Footer Bar -->
-  <footer class="container-fluid" id="socials_section" style="position: absolute;">
+  <footer class="container-fluid" id="socials_section" style=" position: absolute;">
     <div class="row" >
-      <div class="col-sm-4" style="line-height: 0.8; height:160px;">
+      <div class="col-sm-4" style="line-height: 0.8;">
         <h3 style="font-family: Darker Grotesque, sans-serif;">Contacts:</h3>
         <p>Sample Text Sample Text Sample Text Sample Text Sample </p>
         <p>Sample Text Sample Text Sample Text Sample Text Sample Text</p>
         <p>Sample Text Sample Text Sample Text Sample Text Sample </p>
-        <button type="button" class="btn btn-secondary"><b>View More</b></button>
+        <button type="button" class="btn btn-secondary"><b><a href="contactus.php" style="color: white;">View More</a></b></button>
       </div>
-    </div>
+      <p style="padding-left:35%;">Photo: facebook/UST-College of Information and Computing Sciences</p>    </div>
   </footer>
-
 
   
 </body>

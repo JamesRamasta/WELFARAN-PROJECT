@@ -2,11 +2,12 @@
 <html>
 
 <head>
-  <title>UST-CICS SWDB RequestPage</title>
+  <title>UST-CICS SWDB ChangePassword</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -112,36 +113,22 @@
 
   <br />
   <div class="containerhome" style="margin:auto;"></div>
-  <div class="container-fluid" id="containerhome" style=" width:55%; margin-top: 150px;  color: white;  background: rgba(128, 128, 128, 0.8);">
-    <h2 style="margin-top:10px;">CICS - Student Welfare and Development Board</h2>
-    <br />
-
-    <div style="line-height: 0.8; text-indent: 50px; display:absolute;">
-      <p>Sample Text Sample Text Sample TextTextSample TextSample Text </p>
-      <p>Sample Text Sample Text Sample Text TextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample Text TextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample TextTextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample Text Sample TextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample Text Sample TextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample Text Sample TextSample TextSample Text</p>
-      <p>Sample Text Sample Text Sample Text Sample TextSample TextSample Text</p>
-      <button type="button" class="btn btn-danger" style="margin-left:40%; width:150px;">See More</button>
-      <br /><br />
-    </div>
-  </div>
+  <div class="container-fluid" id="containerhome" style=" width:50%; margin-top: 150px; text-align:center;  color: white;  background: rgba(128, 128, 128, 0.7); ">
+  <br /> 
+  <a href="dashboard.php" style="color: white;"><iconify-icon icon="entypo:arrow-left" style="color: crimson; float: left;" width="60" height="60"></iconify-icon></a>
 
   <br />
+  <h2>Change Password</h2>
+    <br />
+    <h6>Old Password: <input type="password" id="oldpass" name="oldpass"></h6> <br/>
+    <h6>New Password: <input type="password" id="newpass" name="newpass"></h6> <br/>
+    <h6 style="margin-right:70px;">Confirm New Password: <input type="password" id="conewpass" name="conewpass"></h6> <br/>
+    <button type="button" class="btn btn-danger">Submit</button>
+    <br /> <br />
+  </div>
+  <br /><br />
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("password");
-      if (x.type === "password") {
-        x.type = "text";
-      } else {
-        x.type = "password";
-      }
-    }
-  </script>
+ 
 
 
   <!-- Footer Bar -->
