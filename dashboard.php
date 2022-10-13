@@ -1,8 +1,22 @@
+
+<?php
+/*
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+*/
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>UST-CICS SWDB Contact</title>
+  <title>UST-CICS SWDB Dashboard</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
@@ -35,10 +49,7 @@
 </head>
 
 <body>
-  <?php
-  session_start();
-  if (!isset($_SESSION['user_name'])) {
-  ?>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand" href="index.php"></a>
@@ -70,107 +81,42 @@
         </ul>
       </div>
     </nav>
-  <?php
-  } elseif (isset($_SESSION['user_name'])) {
-  ?>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="index.php"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <a href="index.php"><img src="images/logo.png" style="width:80px;height:42px;margin-left:20%;" class="logo_enable"></a>
-        <ul class="navbar-nav ml-auto">
-          <li class="d-lg-none">
-            <a href="index.php" class="text d-lg-none">Home</a>
-            <hr class="d-lg-none" />
-          </li>
-          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="index.php">Home</a></li>
-          <li class="d-lg-none">
-            <a href="about.php" class="text d-lg-none">About</a>
-            <hr class="d-lg-none" />
-          </li>
-          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="about.php">About</a></li>
-          <li class="d-lg-none">
-            <a href="products.php" class="text d-lg-none">Products</a>
-            <hr class="d-lg-none" />
-          </li>
-          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="products.php">Products</a></li>
-          <li class="d-lg-none">
-            <a href="faq.php" class="text d-lg-none">FAQ</a>
-            <hr class="d-lg-none" />
-          </li>
-          <li class="nav-item d-none d-lg-block"><a class="nav-link" href="faq.php">FAQ</a></li>
 
-      </div>
-      </div>
-      </ul>
-      </div>
-    </nav>
-  <?php
-  }
-  ?>
+  <br />
+  <div class="container-fluid" id="containerhome" style=" width:55%; margin-top: 150px; margin-left: 40px; color: white;  background: rgba(128, 128, 128, 0.9); float: left;">
+    <h2 style="margin-top:10px;">CICS - Student Welfare and Development Board</h2>
+    <br />
 
-  <div class="container-fluid" style=" background-color: #990000; height:100px; width:100%; margin-top: 100px; ">
-    <h3 style="padding-top: 40px; color: white; line-height:10%; text-indent: 10px;">Contact Us</h3>
-    <hr style="color: white;  width:40%; border-top: 2px solid white; float: left;">
+    <div style="line-height: 0.8; text-indent: 50px; display:absolute;">
+      <p>The SWDB under the supervision of the Office for Student Affairs provides services, </p>
+      <p>programs, and facilities that gears toward students' success and future positive </p>
+      <p>contributions to the society.</p><br/>
+      <p>The University of Santo Tomas is responsible for the students'holistic development</p>
+      <p>with emphasis on moral and character-building through the SWDB office.</p><br/>
+      <p>The SWDC of each College is composed of at least three faculty members with the</p>
+      <p>primary function of investigating and recommending to the Dean and Regent</p>
+      <p>of the College the appropriate actions in disciplinary cases.</p>
+       <p style="float:right; padding-top:20px;"><i>http://education.ust.edu.ph/</i></p>
+      <button type="button" class="btn btn-danger" style="margin-left:40%; width:150px;"><a href="aboutus.php" style="color: white;">See More</a></button>
+      <br /><br />
+    </div>
   </div>
 
-  <div class="container-fluid" style="height:1200px; width:50%; background-color: white; float: right;">
-    <br />
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="ep:office-building"></iconify-icon>Address</h2>
-    <p style="margin-left: 3%;">
-      OSA Office Address: <br />
-      2/F Tan Yan Kee Student Center, <br />
-      University of Santo Tomas <br />
-      España Boulevard, Sampaloc, <br />
-      Manila, 1015 Philippines <br />
-    </p>
+  <div class="container" style="background: rgba(153, 0, 0, 0.8); height:auto; width:400px; text-align: center;  color:white; margin-right:5%; margin-top:10%;">
+    <h3 style="text-align:center; padding-top:20px;">Welcome! StudentNumber<!--<b><?php echo htmlspecialchars($_SESSION["studentnumber"]); ?></b>--></h3> <br />
+    <button type="button" class="btn btn-light" style="width: 90%;"><a href="viewrequest.php" style="color: black;">View Request</a></button> <br /> <br />
+    <button type="button" class="btn btn-light" style="width: 90%;"><a href="changepassword.php" style="color: black;">Change Password</a></button> <br /> <br />
+    <button type="button" class="btn btn-secondary " style="width: 30%; "><a href="logout.php" style="color: white;">Logout</a></button>
 
-    <p style="margin-left: 3%;">
-      CICS Office Address: <br />
-      2/F Blessed Pier Giorgio Frassati Building <br />
-      University of Santo Tomas <br />
-      España Boulevard, Sampaloc, <br />
-      Manila, 1015 Philippines <br />
-    </p>
-
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="bytesize:telephone"></iconify-icon>Telephone</h2>
-    <p style="margin-left: 3%;">
-      Office for Student Affairs (OSA) Office:<br />
-      +63-2-3406-1611 local 8267 / 8294 <br />
-      +63-2-8731-2985 <br />
-      <br/>
-      Student Welfare and Development Board (SWDB) <br/>
-      +63-2-3406-1611 local 8550  <br/>
-      <br/>
-      College of Information and Computing Sciences (CICS):<br/>
-      +63-2-3406-1611 local 8518<br/>
-    </p>
-
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="carbon:email"></iconify-icon>Email</h2>
-    <p style="margin-left: 3%;">
-      Office for Student Affairs (OSA):<br/>
-      osa@ust.edu.ph<br /><br/>
-      College of Information and Computing Sciences (CICS): <br />
-      cics@ust.edu.ph<br /><br/>
-    </p>
-    <br />
+    <br /> <br />
   </div>
+  <br />
+  <br />
+  <br />
+  <br /> <br />
 
 
-  <div class="container-fluid" style=" height:1000px; width:50%; margin-right: 50%;  background: rgba(128, 128, 128, 0.8); ">
-    <br />
-    <h4 style="color:white; margin-left: 3%;"><iconify-icon inline icon="bxs:school"></iconify-icon><b>Related Links:</b></h4>
 
-    <p style="margin-left: 3%; color:white; ">
-    <a href="https://osa.ust.edu.ph/" style="color:white;">Office of Student Affairs</a><br />
-    <a href="https://www.ust.edu.ph/administrative-offices/office-for-student-affairs/" style="color:white;">Office of Student Affairs - Administrative Offices </a><br />
-    <a href="https://www.ust.edu.ph/information-and-computing-sciences/" style="color: white;">UST - College of Information and Computing Sciences </a><br />
- 
-    </p>
-
- 
-  </div>
   <!-- Footer Bar -->
   <footer class="container-fluid" id="socials_section" style=" position: absolute;">
     <div class="row">

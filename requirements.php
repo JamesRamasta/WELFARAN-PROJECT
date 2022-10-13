@@ -2,11 +2,12 @@
 <html>
 
 <head>
-  <title>UST-CICS SWDB Contact</title>
+  <title>UST-CICS SWDB RequirementPage</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -35,6 +36,7 @@
 </head>
 
 <body>
+
   <?php
   session_start();
   if (!isset($_SESSION['user_name'])) {
@@ -110,67 +112,53 @@
   }
   ?>
 
-  <div class="container-fluid" style=" background-color: #990000; height:100px; width:100%; margin-top: 100px; ">
-    <h3 style="padding-top: 40px; color: white; line-height:10%; text-indent: 10px;">Contact Us</h3>
-    <hr style="color: white;  width:40%; border-top: 2px solid white; float: left;">
+  <br />
+  <div class="containerhome" style="margin:auto;"></div>
+  <div class="container-fluid" id="containerhome" style="text-align:center; height:auto; width:80%; margin-top: 120px;  color: white;  background: rgba(128, 128, 128, 0.9);">
+
+    <a href="request.php" style="color: white;">
+      <iconify-icon icon="entypo:arrow-left" style="color: crimson; float: left; padding-top:10px;" width="60" height="60"> </iconify-icon>
+      <p style="float: left; padding-top:25px;">Go Back</p>
+    </a>
+    <br/>
+    <h2 style="padding-top:20px; margin-right:10%">Request</h2>
+
+    <div style="line-height: 0.8; display:absolute; margin-top:20px;">
+    <p>The documents required for your request are the following:</p>
+    <p style="margin-top:40px;">Request/s: Certificate of Good Moral Character & ID Processing</p>
+    <p  style="margin-top:40px;"><b>Requirements for Certificate of Good Moral Character</b></p>
+    <p  style="margin-top:40px;">
+    Requirement 1: School ID or Registration Form<br/><br/>
+		<button type="button">Choose File</button> No File Chosen
+    </p>
+    <p  style="margin-top:40px;">
+    Requirement 2: Letter of Explanation for non-pending case<br/><br/>
+		<button type="button">Choose File</button> No File Chosen
+    </p>
+    <p  style="margin-top:40px;">
+    Requirement 3: Scanned Copy of Good Moral Application Form<br/><br/>
+		<button type="button">Choose File</button> No File Chosen
+    </p>
+    <br/>
+    <p  style="margin-top:40px;"><b>Requirements for ID processing</b></p>
+    <p  style="margin-top:40px;">
+    Requirement 1: Registration Form<br/><br/>
+    <button type="button">Choose File</button> No File Chosen
+    </p>
+
+      <button type="button" class="btn btn-danger" style="margin-top: 50px;width:150px;"><a href="requirements.php" style="color: white;">Submit</button>
+      <br /><br />
+    </div>
   </div>
 
-  <div class="container-fluid" style="height:1200px; width:50%; background-color: white; float: right;">
-    <br />
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="ep:office-building"></iconify-icon>Address</h2>
-    <p style="margin-left: 3%;">
-      OSA Office Address: <br />
-      2/F Tan Yan Kee Student Center, <br />
-      University of Santo Tomas <br />
-      España Boulevard, Sampaloc, <br />
-      Manila, 1015 Philippines <br />
-    </p>
-
-    <p style="margin-left: 3%;">
-      CICS Office Address: <br />
-      2/F Blessed Pier Giorgio Frassati Building <br />
-      University of Santo Tomas <br />
-      España Boulevard, Sampaloc, <br />
-      Manila, 1015 Philippines <br />
-    </p>
-
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="bytesize:telephone"></iconify-icon>Telephone</h2>
-    <p style="margin-left: 3%;">
-      Office for Student Affairs (OSA) Office:<br />
-      +63-2-3406-1611 local 8267 / 8294 <br />
-      +63-2-8731-2985 <br />
-      <br/>
-      Student Welfare and Development Board (SWDB) <br/>
-      +63-2-3406-1611 local 8550  <br/>
-      <br/>
-      College of Information and Computing Sciences (CICS):<br/>
-      +63-2-3406-1611 local 8518<br/>
-    </p>
-
-    <h2 style="margin-left: 3%;"><iconify-icon inline icon="carbon:email"></iconify-icon>Email</h2>
-    <p style="margin-left: 3%;">
-      Office for Student Affairs (OSA):<br/>
-      osa@ust.edu.ph<br /><br/>
-      College of Information and Computing Sciences (CICS): <br />
-      cics@ust.edu.ph<br /><br/>
-    </p>
-    <br />
-  </div>
+  <br />
 
 
-  <div class="container-fluid" style=" height:1000px; width:50%; margin-right: 50%;  background: rgba(128, 128, 128, 0.8); ">
-    <br />
-    <h4 style="color:white; margin-left: 3%;"><iconify-icon inline icon="bxs:school"></iconify-icon><b>Related Links:</b></h4>
+  <a href="request.php" style="color: white;">
+      <iconify-icon icon="entypo:arrow-left" style="color: crimson; float: left; padding-top:10px;" width="60" height="60"> </iconify-icon>
+      <p style="float: left; padding-top:25px;">Go Back</p>
+    </a>
 
-    <p style="margin-left: 3%; color:white; ">
-    <a href="https://osa.ust.edu.ph/" style="color:white;">Office of Student Affairs</a><br />
-    <a href="https://www.ust.edu.ph/administrative-offices/office-for-student-affairs/" style="color:white;">Office of Student Affairs - Administrative Offices </a><br />
-    <a href="https://www.ust.edu.ph/information-and-computing-sciences/" style="color: white;">UST - College of Information and Computing Sciences </a><br />
- 
-    </p>
-
- 
-  </div>
   <!-- Footer Bar -->
   <footer class="container-fluid" id="socials_section" style=" position: absolute;">
     <div class="row">
